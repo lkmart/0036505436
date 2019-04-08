@@ -21,7 +21,7 @@ class Quiz {
     
     init?(json: Any) {
         
-        if let jsonDict = json as? [String: Any],
+        if let jsonDict = json as? [String: Any?],
             let jsonId = jsonDict["id"] as? Int,
             let jsonTitle = jsonDict["title"] as? String,
             let jsonDescription = jsonDict["description"] as? String,
